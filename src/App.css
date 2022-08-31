@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Catamaran:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: hsla(223, 11%, 15%, 1);
+    --secondary-color: #30394F;
+
+    --primary-color-hover: hsl(225, 11%, 36%);
+    --secondary-color-hover: #1e273a;
+
+    --text-color: #DBEFED;
+    --text-color-fff: #FFFFFF;
+
+    --font-primary: 'Catamaran', sans-serif;
+    --font-secondary: 'Black Ops One', cursive;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+
 }
