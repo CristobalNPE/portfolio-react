@@ -37,4 +37,12 @@
     gap: 2em;
     flex-wrap: wrap;
     justify-content: center;
+
 }
+
+/*@media only screen and (max-width: 930px) {*/
+/*    .stack-box {*/
+/*        max-height: 60vh;*/
+/*        overflow: scroll;*/
+/*    }*/
+/*}*/

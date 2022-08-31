@@ -1,5 +1,5 @@
 .toggleButton button {
-    padding: 1em 2em;
+    padding: .7em 2em;
     border: none;
     border-radius: 35px;
     background-color: var(--secondary-color);
@@ -15,20 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-block: 2em;
 
 }
 
 .links {
+    margin-block: 2em;
     background-color: var(--secondary-color);
     display: flex;
     width: clamp(31rem, 65vw, 45rem);
     border-radius: 35px;
     padding-inline: 1.5em;
     justify-content: space-between;
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    /*position: fixed;*/
+    /*bottom: 5%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
 
 
 }

@@ -2,14 +2,16 @@
 
     display: flex;
     margin: 11em auto;
-    justify-content: space-around;
-    gap: 1em;
+    justify-content: space-between;
+    width: 80%;
     align-items: center;
+
 }
 
 .welcome-msg {
     display: flex;
     flex-direction: column;
+
 }
 
 .subtitle {
