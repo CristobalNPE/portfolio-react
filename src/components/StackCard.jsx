@@ -1,9 +1,11 @@
 import React from 'react';
+import '../styles/StackCard.css'
 
-const StackCard = () => {
+const StackCard = ({name, img}) => {
     return (
-        <div>
-
+        <div className="stack-card">
+            <h3 className="card-title">{name}</h3>
+            <img className="card-img" src={img} alt={`${name} logo`}/>
         </div>
     );
 };

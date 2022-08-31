@@ -1,8 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import StackImg from '../assets/stack.png'
 import '../styles/Stack.css'
+import StackCard from "../components/StackCard.jsx";
+import cardsData from "../constants/stackdata.js"
 
 const Stack = () => {
+    const [data, setData] = useState(cardsData)
+
+    const stackCardElements = () => {
+        return data.map(cardData => <StackCard key={cardData.id} name={cardData.id} img={cardData.img}/>)
+    }
+
+
     return (
         <div className="stack">
 
@@ -12,6 +21,9 @@ const Stack = () => {
                 <hr className="section-title__line"/>
             </div>
 
+            <div className="stack-box">
+                {stackCardElements()}
+            </div>
 
         </div>
     );

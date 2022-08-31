@@ -1,0 +1,13 @@
+.stack-card {
+    display: flex;
+    width: 10rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: var(--secondary-color);
+    gap: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+.card-title {
+    font-size: 2rem;
+}
