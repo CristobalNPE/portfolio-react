@@ -1,29 +1,31 @@
-import {Link} from 'react-router-dom'
+import "../styles/Home.css"
+import MailIcon from '@mui/icons-material/Mail';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Home = () => {
     return (
         <div className="home">
-            <div className="landing">
-                <div className="welcome-msg">
-                    <h3>¡Bienvenido! Mi nombre es</h3>
-                    <h1>Cristóbal Pulgar Estay</h1>
-                    <h3>- Desarrollador Web - </h3>
-
-                    <ul className="contact-shortcuts">
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="#">Location</a></li>
-                    </ul>
-                </div>
-                <Navbar/>
+            <div className="welcome-msg">
+                <h3 className="subtitle">¡Bienvenido! Mi nombre es</h3>
+                <h1 className="main-title">Cristóbal<br/> Pulgar Estay</h1>
+                <h3 className="subtitle">- Desarrollador Web - </h3>
             </div>
-            <div className="skills">
+            <ul className="contact-shortcuts">
+                <li className="contact-icon">
+                    <a className="contact-link" href="mailto:cristobal.npe@gmail.com"><MailIcon fontSize="large"/></a>
+                </li>
+                <li className="contact-icon">
+                    <a className="contact-link" href="#"><GitHubIcon fontSize="large"/></a></li>
+                <li className="contact-icon">
+                    <a className="contact-link" href="#"><LinkedInIcon fontSize="large"/></a>
+                </li>
+                <li className="contact-icon">
+                    <a className="contact-link" href="#"><LocationOnIcon fontSize="large"/></a>
+                </li>
+            </ul>
 
-            </div>
-            <div className="projects">
-
-            </div>
         </div>
     );
 };

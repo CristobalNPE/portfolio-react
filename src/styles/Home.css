@@ -1,0 +1,50 @@
+.home {
+    /*background-color: red;*/
+    display: flex;
+    margin: 9em auto;
+    justify-content: space-around;
+    gap: 1em;
+}
+.welcome-msg{
+    /*background-color: indianred;*/
+    display: flex;
+    flex-direction: column;
+}
+.subtitle {
+    font-size: clamp(1rem, 1.7vw, 4rem);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.main-title {
+    font-family: var(--font-secondary);
+
+    font-size: clamp(3.2rem, 8vw, 8rem);
+}
+
+.contact-shortcuts {
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+ul {
+    list-style: none;
+}
+
+.contact-link {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    width:3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s ease-in-out;
+}
+.contact-link:hover {
+    background-color: #839cd9;
+}
