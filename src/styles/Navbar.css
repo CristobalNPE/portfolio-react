@@ -1,3 +1,22 @@
+.toggleButton button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 35px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .links {
     background-color: var(--secondary-color);
@@ -29,10 +48,58 @@
     box-shadow: inset 1px -12px 0 -4px var(--secondary-color-hover);
 }
 
+#open {
+    height: 100vh;
+    background-color: var(--secondary-color);
+
+}
+
+#open .links {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 16em;
+    padding-top: 10em;
+    gap: 2em;
+
+}
+
+#open a {
+    width: 100%;
+    text-align: center;
+
+}
+
+
 /*TODO: MAKE NAVBAR NOT ABSOLUTE POSITIONED*/
 
 @media only screen and (max-width: 600px) {
-    .links{
+    .toggleButton {
+        display: flex
+    }
+
+    #close a {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .toggleButton {
+        display: none;
+    }
+
+    #open {
+        height: 100px;
+    }
+
+    #open .links {
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (max-height: 600px) {
+    .links {
         display: none;
     }
 }
