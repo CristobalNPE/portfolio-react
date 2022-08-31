@@ -27,6 +27,7 @@ body {
     text-rendering: optimizeSpeed;
     background-color: var(--primary-color);
     color: var(--text-color)
+
 }
 
 img,
@@ -34,6 +35,15 @@ picture {
     max-width: 100%;
     display: block;
 }
+
 a {
     text-decoration: none;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
