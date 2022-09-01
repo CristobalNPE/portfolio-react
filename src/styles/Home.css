@@ -8,6 +8,8 @@
 
 }
 
+
+
 .welcome-msg {
     display: flex;
     flex-direction: column;
@@ -23,7 +25,7 @@
 
 .main-title {
     font-family: var(--font-secondary);
-
+    letter-spacing: 2px;
     font-size: clamp(3.4rem, 7.5vw, 7.5rem);
 }
 
@@ -58,7 +60,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
     .home {
-        margin: 5em 2em;
+        margin: 7em 2em;
         flex-direction: column;
     }
     .welcome-msg {
@@ -66,7 +68,7 @@ ul {
         text-align: center;
     }
     .contact-shortcuts {
-        margin-top: 2em;
+        margin-top: 3.5em;
         flex-direction: row;
     }
 }

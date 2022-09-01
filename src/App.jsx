@@ -1,12 +1,13 @@
 import './App.css'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Projects from './pages/Projects.jsx'
-import Stack from './pages/Stack.jsx'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from "./components/Navbar"
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Projects from "./pages/Projects.jsx";
+import Stack from "./pages/Stack.jsx";
 
 function App() {
+
     return (
         <div className="App">
             <Router>
@@ -18,6 +19,7 @@ function App() {
                 </Routes>
                 <Navbar/>
             </Router>
+
         </div>
     )
 }

@@ -4,6 +4,7 @@ import '../styles/Stack.css'
 import StackCard from "../components/StackCard.jsx";
 import cardsData from "../constants/stackdata.js"
 
+
 const Stack = () => {
     const [data, setData] = useState(cardsData)
 
@@ -14,7 +15,6 @@ const Stack = () => {
 
     return (
         <div className="stack">
-
             <div className="section-title">
                 <img className="section-title__img" src={StackImg} alt="Image of stack overflowing"/>
                 <h1 className="section-title__text">Stack</h1>
@@ -24,7 +24,6 @@ const Stack = () => {
             <div className="stack-box">
                 {stackCardElements()}
             </div>
-
         </div>
     );
 };

@@ -4,8 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
+
 const Home = () => {
     return (
+
         <div className="home">
             <div className="welcome-msg">
                 <h3 className="subtitle">¡Bienvenido! Mi nombre es</h3>
@@ -25,7 +27,6 @@ const Home = () => {
                     <a className="contact-link" href="#"><LocationOnIcon fontSize="large"/></a>
                 </li>
             </ul>
-
         </div>
     );
 };

@@ -1,5 +1,5 @@
 .toggleButton button {
-    padding: .7em 2em;
+    padding: .7em 4em;
     border: none;
     border-radius: 35px;
     background-color: var(--secondary-color);
@@ -10,6 +10,8 @@
     letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
+
+
 }
 
 .toggleButton {
@@ -30,6 +32,8 @@
     justify-content: space-between;
 
     box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
+
+
 
 }
 

@@ -1,9 +1,29 @@
 import React from 'react';
+import '../styles/Projects.css'
+import ProjectsImg from '../assets/proyects.png'
+import Project from '../components/Project.jsx'
 
 const Projects = () => {
     return (
-        <div>
-            <h1>Projects</h1>
+        <div className="projects">
+            <div className="section-title">
+                <img className="section-title__img" src={ProjectsImg} alt="Image of stacked files"/>
+                <h1 className="section-title__text">Proyectos</h1>
+                <hr className="section-title__line"/>
+            </div>
+
+            <div className="proyects-box">
+                <Project/>
+                <div className="proyect-indicators">
+
+                </div>
+            </div>
+            <div className="proyect-navigation">
+                <button>PREV</button>
+                <button>DETAILS</button>
+                <button>NEXT</button>
+            </div>
+
         </div>
     );
 };
