@@ -9,6 +9,7 @@
     font-size: 1.4rem;
     letter-spacing: 1px;
     cursor: pointer;
+    box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
 }
 
 .toggleButton {
@@ -27,11 +28,8 @@
     border-radius: 35px;
     padding-inline: 1.5em;
     justify-content: space-between;
-    /*position: fixed;*/
-    /*bottom: 5%;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
 
+    box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
 
 }
 
@@ -51,17 +49,20 @@
 }
 
 #open {
-    height: 100vh;
-    background-color: var(--secondary-color);
 
+    background-color: var(--secondary-color);
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    top: 0;
 }
 
 #open .links {
-    height: 100vh;
+
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 16em;
-    padding-top: 10em;
+
     gap: 2em;
 
 }
@@ -73,11 +74,13 @@
 }
 
 
-/*TODO: MAKE NAVBAR NOT ABSOLUTE POSITIONED*/
-
 @media only screen and (max-width: 600px) {
     .toggleButton {
         display: flex
+    }
+
+    .links {
+        box-shadow: none;
     }
 
     #close a {
@@ -88,10 +91,6 @@
 @media only screen and (min-width: 600px) {
     .toggleButton {
         display: none;
-    }
-
-    #open {
-        height: 100px;
     }
 
     #open .links {
