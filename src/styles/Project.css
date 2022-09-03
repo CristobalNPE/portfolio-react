@@ -1,0 +1,82 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 35rem;
+    position: relative;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+.project-img {
+    background-color: white;
+    height: 10rem;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 1px 1px 5px 5px rgba(131, 156, 217, 0.04);
+    opacity: .6;
+    transition: opacity .2s ease-in-out;
+}
+
+.project-details {
+    position: relative;
+    background: rgb(30, 39, 58);
+    background: radial-gradient(circle, rgba(30,39,58,1) 0%, rgb(44, 54, 86) 100%);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: 0 -20rem;
+    height: 85%;
+    border-radius: 15px;
+    padding-inline: 2em;
+    padding-top: 6em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    transition: background-position .6s ease-in-out;
+    justify-content: space-between;
+}
+
+.project-details:hover {
+    background-position: 0 0;
+}
+
+.project-title {
+
+}
+
+.project-description {
+
+}
+
+.btn-details {
+    border: none;
+    padding: .5em;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    opacity: .7;
+    transition: opacity .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn-details:hover {
+    opacity: 1;
+}
+.btn-details:active{
+    opacity: .4;
+}
+.project-card:hover  .project-img{
+    opacity: 1;
+}

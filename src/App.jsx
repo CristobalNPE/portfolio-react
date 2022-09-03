@@ -8,16 +8,18 @@ import Stack from "./pages/Stack.jsx";
 
 function App() {
 
+
     return (
         <div className="App">
             <Router>
+                <Navbar/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/projects" element={<Projects/>}/>
                     <Route path="/stack" element={<Stack/>}/>
                 </Routes>
-                <Navbar/>
+
             </Router>
 
         </div>

@@ -12,18 +12,13 @@ const Projects = () => {
                 <hr className="section-title__line"/>
             </div>
 
-            <div className="proyects-box">
-                <Project/>
+            <div className="projects-box">
+                <Project/><Project/><Project/><Project/>
+
                 <div className="proyect-indicators">
 
                 </div>
             </div>
-            <div className="proyect-navigation">
-                <button>PREV</button>
-                <button>DETAILS</button>
-                <button>NEXT</button>
-            </div>
-
         </div>
     );
 };

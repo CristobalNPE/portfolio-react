@@ -1,13 +1,12 @@
 .home {
 
     display: flex;
-    margin: 11em auto;
+    margin: 30vh auto;
     justify-content: space-between;
     width: 80%;
     align-items: center;
 
 }
-
 
 
 .welcome-msg {
@@ -60,13 +59,15 @@ ul {
 
 @media only screen and (max-width: 600px) {
     .home {
-        margin: 7em 2em;
+        margin: 12em 2em;
         flex-direction: column;
     }
+
     .welcome-msg {
         gap: 1em;
         text-align: center;
     }
+
     .contact-shortcuts {
         margin-top: 3.5em;
         flex-direction: row;

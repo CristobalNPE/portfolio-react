@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Catamaran:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: hsla(223, 11%, 15%, 1);
+    --primary-color: #22242A;
     --secondary-color: #363f5b;
 
     --primary-color-hover: hsl(225, 11%, 36%);
@@ -23,9 +23,12 @@
 body {
     font-family: var(--font-primary);
 
-    max-height: 100vh;
     text-rendering: optimizeSpeed;
-    background-color: var(--primary-color);
+    background: #22242A;
+
+    background: -moz-linear-gradient(45deg, #22242A 0%, #363F5B 100%);
+    background: -webkit-linear-gradient(45deg, #22242A 0%, #363F5B 100%);
+    background: linear-gradient(45deg, #22242A 0%, #2a3248 100%);
     color: var(--text-color)
 
 }
@@ -52,9 +55,13 @@ a {
 .App {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
     align-items: center;
+
+
+}
+
+@media only screen and (max-width: 600px) {
 
 }
 

@@ -1,13 +1,15 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 299;
+}
+
 .toggleButton button {
-    padding: .7em 4em;
+    padding: 1.5em;
     border: none;
-    border-radius: 35px;
+    border-radius: 15px;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    font-family: var(--font-primary);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
 
@@ -17,22 +19,19 @@
 .toggleButton {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-block: 2em;
-
+    margin-right: 2em;
 }
 
 .links {
-    margin-block: 2em;
-    background-color: var(--secondary-color);
+
+    backdrop-filter: blur(20px);
     display: flex;
-    width: clamp(31rem, 65vw, 45rem);
-    border-radius: 35px;
+    width: 100%;
+
     padding-inline: 1.5em;
     justify-content: space-between;
-
-    box-shadow: 1px 1px 10px 4px rgba(78, 123, 222, 0.11);
-
 
 
 }
@@ -44,18 +43,23 @@
     text-transform: uppercase;
     padding: 1em;
     font-weight: 300;
-    transition: box-shadow .2s ease-in-out;
+    transition: opacity .3s ease-in-out;
     overflow: hidden;
+    opacity: .5;
+    letter-spacing: 2px;
+
 }
 
 .links a:hover {
-    box-shadow: inset 1px -12px 0 -4px var(--secondary-color-hover);
+    opacity: 1;
+
+
 }
 
 #open {
 
     background-color: var(--secondary-color);
-    z-index: 99;
+    z-index: 399;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -64,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 #open .links {
@@ -108,8 +113,3 @@
 }
 
 
-@media only screen and (max-height: 600px) {
-    .links {
-        display: none;
-    }
-}
