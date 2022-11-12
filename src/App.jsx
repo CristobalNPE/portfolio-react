@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Stack from "./pages/Stack.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx"
+
 
 function App() {
 
@@ -13,13 +15,14 @@ function App() {
         <div className="App">
             <Router>
                 <Navbar/>
-                <Routes>
+                <Routes location={location} key={location.pathname}>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/projects" element={<Projects/>}/>
                     <Route path="/stack" element={<Stack/>}/>
-                </Routes>
 
+                    <Route path="/projects/detalles" element={<ProjectDetails/>}/>
+                </Routes>
             </Router>
 
         </div>

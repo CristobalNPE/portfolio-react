@@ -6,17 +6,18 @@
     width: 80%;
     align-items: center;
 
+
 }
 
 
 .welcome-msg {
     display: flex;
     flex-direction: column;
-
+    user-select: none;
 }
 
 .subtitle {
-    font-size: clamp(1rem, 1.5vw, 4rem);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -56,6 +57,23 @@ ul {
     background-color: #839cd9;
 }
 
+.contact-icon {
+    position: relative;
+}
+
+.map {
+    opacity: 0;
+    transform: scale(4);
+    display: block;
+    position: absolute;
+    left: -260%;
+    transition: opacity .3s ease-in;
+}
+
+.contact-icon:hover > .map {
+    opacity: .3;
+}
+
 
 @media only screen and (max-width: 600px) {
     .home {
@@ -71,5 +89,9 @@ ul {
     .contact-shortcuts {
         margin-top: 3.5em;
         flex-direction: row;
+    }
+
+    .contact-icon:hover > .map {
+        opacity: 0;
     }
 }

@@ -1,4 +1,4 @@
-import {css3, github, html5, java, javascript, mysql, react, spring} from '../assets'
+import {css3, github, html5, java, javascript, mysql, react, spring, postgresql} from '../assets'
 
 const stackCards = [
     {
@@ -28,6 +28,10 @@ const stackCards = [
     {
         id: "React",
         img: react
+    },
+    {
+        id: "PostgreSQL",
+        img: postgresql
     },
     {
         id: "Spring",

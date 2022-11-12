@@ -2,14 +2,21 @@
     display: flex;
     width: 10rem;
 
+    height: 12rem;
+
     flex-direction: column-reverse;
     align-items: center;
     background-color: var(--secondary-color);
     gap: .8em;
-    padding: 1em;
+    padding: 1.2em 2em;
     border-radius: 10px;
 }
 .card-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
+    transition: font-size .1s ease-out;
+}
+
+.stack-card:hover > .card-title{
+    font-size: 1.8rem;
 }

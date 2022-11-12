@@ -6,6 +6,14 @@ import javascript from "./javascript.svg";
 import mysql from "./mysql.svg";
 import react from "./react.svg";
 import spring from "./spring.svg";
+import postgresql from "./postgresql.svg"
+import chilemap from "./chile.svg"
+import project1 from "./project1.png"
+
+import project1_1 from "./proyect1/1.png"
+import project1_2 from "./proyect1/2.png"
+import project1_3 from "./proyect1/3.png"
+import project1_4 from "./proyect1/4.png"
 
 
 export {
@@ -16,5 +24,12 @@ export {
     javascript,
     mysql,
     react,
-    spring
+    postgresql,
+    spring,
+    project1,
+    chilemap,
+    project1_1,
+    project1_2,
+    project1_3,
+    project1_4
 };

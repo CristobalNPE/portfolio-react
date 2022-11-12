@@ -10,9 +10,20 @@
 
 .projects-box {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 
+}
+
+@media only screen and (max-width: 1235px) {
+    .projects-box {
+        width: 100%;
+        flex-direction: row;
+
+
+
+    }
 }
 
 

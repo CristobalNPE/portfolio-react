@@ -1,0 +1,15 @@
+.stack-pill{
+    background-color: #839cd9;
+    display: flex;
+    width: fit-content;
+    padding: .3em 1.2em;
+    border-radius: 25%;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-block: .3em;
+    box-shadow: 0 0 8px -2px #839cd9;
+    user-select: none;
+    letter-spacing: 1px;
+    height: 2.2em;
+    align-items: center;
+}

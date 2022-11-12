@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Catamaran:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
 :root {
     --primary-color: #22242A;
     --secondary-color: #363f5b;
@@ -10,7 +10,8 @@
     --text-color: #DBEFED;
     --text-color-fff: #FFFFFF;
 
-    --font-primary: 'Catamaran', sans-serif;
+    /*--font-primary: 'Catamaran', sans-serif;*/
+    --font-primary: 'Quicksand', sans-serif;
     --font-secondary: 'Black Ops One', cursive;
 }
 
@@ -25,11 +26,16 @@ body {
 
     text-rendering: optimizeSpeed;
     background: #22242A;
+    max-height: 100vh;
+    color: var(--text-color);
 
-    background: -moz-linear-gradient(45deg, #22242A 0%, #363F5B 100%);
-    background: -webkit-linear-gradient(45deg, #22242A 0%, #363F5B 100%);
-    background: linear-gradient(45deg, #22242A 0%, #2a3248 100%);
-    color: var(--text-color)
+    background: linear-gradient(122deg, #22242a, #282e3d);
+    background-size: 400% 400%;
+
+    -webkit-animation: backgroundGradient 5s ease infinite;
+    -moz-animation: backgroundGradient 5s ease infinite;
+    animation: backgroundGradient 5s ease infinite;
+
 
 }
 
@@ -57,11 +63,27 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-
+    max-height: 100vh;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 600px) {
 
 }
 
+
+@-webkit-keyframes backgroundGradient {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+@-moz-keyframes backgroundGradient {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+@keyframes backgroundGradient {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}

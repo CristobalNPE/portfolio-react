@@ -1,0 +1,104 @@
+.projects-details {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 80%;
+
+}
+
+.description-text {
+    font-size: clamp(1.1rem, 1vw, 1.3rem);
+    line-height: 2rem;
+    white-space: pre-wrap;
+    margin-block: 1em;
+}
+
+.description_section {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3em;
+    gap: 2em;
+}
+
+.section-stack {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-block: 1em;
+}
+
+.section-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btn-out {
+    color: var(--font-secondary);
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+    background-color: var(--secondary-color);
+    padding: 1.5em 2.5em;
+    font-weight: 600;
+    border-radius: .75em;
+    display: flex;
+    align-items: center;
+    gap: .75em;
+    opacity: .8;
+    transition: all .2s ease-in-out;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: transparent;
+}
+
+.btn-out:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .description_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-stack {
+        width: 100%;
+    }
+
+    .section-btns {
+        flex-direction: row;
+
+
+    }
+}
+
+.carousel-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 3em;
+    opacity: .8;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .section-btns {
+        flex-direction: column;
+
+
+    }
+
+    .pills {
+        gap: .5em;
+
+    }
+}

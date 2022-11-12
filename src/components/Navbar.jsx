@@ -19,13 +19,15 @@ const Navbar = () => {
 
     return (
         <nav className="navbar" id={toggleNavbar ? "open" : "close"}>
-            <div className="toggleButton">
-                <button onClick={toggle}><ReorderIcon fontSize="large"/></button>
-            </div>
+            {
+                !toggleNavbar &&
+                <div className="toggleButton">
+                    <button onClick={toggle}><ReorderIcon fontSize="large"/></button>
+                </div>}
             <div className="links">
-                <Link to="/">Inicio</Link>
-                <Link to="/about">Perfil</Link>
-                <Link to="/projects">Proyectos</Link>
+                <Link to="/">Home</Link>
+                <Link to="/about">About me</Link>
+                <Link to="/projects">Projects</Link>
                 <Link to="/stack">Stack</Link>
             </div>
         </nav>
