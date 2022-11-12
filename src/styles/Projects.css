@@ -28,6 +28,7 @@
 
 
 @media only screen and (max-width: 600px) {
+
     .section-title {
         display: flex;
         flex-direction: column;
