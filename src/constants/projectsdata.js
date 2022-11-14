@@ -1,4 +1,3 @@
-import {project1} from '../assets'
 import * as myAssets from '../assets/index.js'
 
 const projects = [
@@ -23,7 +22,7 @@ const projects = [
 
     },
     {
-        img: project1,
+        img: myAssets.project2_1,
         title: "Sales System",
         description: "One of my first fullstack projects, its main purpose was to learn how to implement a basic REST " +
             "APIOne of my first fullstack projects, its main purpose was to learn how to implement a basic REST APIOne " +
@@ -35,7 +34,7 @@ const projects = [
             " of my first fullstack projects, its main purpose was to learn how to implement a basic REST API",
         stack: ["SpringBoot", "React", "PostgreSql"],
         fullStack: ["SpringBoot", "React", "PostgreSql", "Java", "JavaScript"],
-        captures: [],
+        captures: [myAssets.project2_1],
         objectives: "Terminar el Sales System",
         difficulties: "Complicadoo el Sales System",
 
