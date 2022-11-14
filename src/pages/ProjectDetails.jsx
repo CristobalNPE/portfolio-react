@@ -4,7 +4,6 @@ import '../styles/ProjectDetails.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import {Carousel} from "react-responsive-carousel";
-import {project1_1, project1_2, project1_3, project1_4} from "../assets/index.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {motion} from "framer-motion"
 import StackPill from "../components/StackPill.jsx";
@@ -17,8 +16,15 @@ const ProjectDetails = () => {
 
     const StackPillElements = () => project.fullStack.map(s => <StackPill name={s}/>)
 
-    function returnToProjects(){
+    function returnToProjects() {
         navigate("/projects")
+    }
+
+    function generateImgCarousel() {
+        return project.captures.map(capture => (
+            <div className="carousel-card">
+                <img src={capture} alt={`Project Capture`}/>
+            </div>))
     }
 
     return (
@@ -61,19 +67,7 @@ const ProjectDetails = () => {
             </section>
 
             <Carousel className="carousel-custom" autoPlay={true} infiniteLoop={true} width={"80%"}>
-                <div className="carousel-card">
-                    {/*should pass these imgs as props later*/}
-                    <img src={project1_1} alt="#"/>
-                </div>
-                <div className="carousel-card">
-                    <img src={project1_2} alt="#"/>
-                </div>
-                <div className="carousel-card">
-                    <img src={project1_3} alt="#"/>
-                </div>
-                <div className="carousel-card">
-                    <img src={project1_4} alt="#"/>
-                </div>
+                {generateImgCarousel()}
             </Carousel>
 
 

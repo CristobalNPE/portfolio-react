@@ -21,6 +21,7 @@ const Projects = () => {
                 captures={project.captures}
                 objectives={project.objectives}
                 difficulties={project.difficulties}
+
             />
         ))
     }
