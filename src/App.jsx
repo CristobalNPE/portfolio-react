@@ -9,8 +9,6 @@ import ProjectDetails from "./pages/ProjectDetails.jsx"
 
 
 function App() {
-
-
     return (
         <div className="App">
             <Router>
@@ -24,7 +22,6 @@ function App() {
                     <Route path="/projects/detalles" element={<ProjectDetails/>}/>
                 </Routes>
             </Router>
-
         </div>
     )
 }

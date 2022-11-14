@@ -61,17 +61,17 @@ const ProjectDetails = () => {
             </section>
 
             <Carousel className="carousel-custom" autoPlay={true} infiniteLoop={true} width={"80%"}>
-                <div>
+                <div className="carousel-card">
                     {/*should pass these imgs as props later*/}
                     <img src={project1_1} alt="#"/>
                 </div>
-                <div>
+                <div className="carousel-card">
                     <img src={project1_2} alt="#"/>
                 </div>
-                <div>
+                <div className="carousel-card">
                     <img src={project1_3} alt="#"/>
                 </div>
-                <div>
+                <div className="carousel-card">
                     <img src={project1_4} alt="#"/>
                 </div>
             </Carousel>
