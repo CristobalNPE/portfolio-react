@@ -91,7 +91,10 @@ ul {
         flex-direction: row;
     }
 
+    .map{
+        display: none;
+    }
     .contact-icon:hover > .map {
-        opacity: 0;
+        display: none;
     }
 }

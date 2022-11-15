@@ -6,7 +6,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import chileMap from "../assets/chile.svg"
 
 import {motion} from "framer-motion"
-import {useEffect, useState} from "react";
 
 const Home = () => {
 
