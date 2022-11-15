@@ -13,3 +13,18 @@
     height: 2.2em;
     align-items: center;
 }
+
+.stack-pill-s{
+    background-color: rgba(131, 156, 217, 0.22);
+    display: flex;
+    width: fit-content;
+    padding: .3em .5em;
+    border-radius: 15%;
+    color: #FFFFFF;
+    font-weight:300;
+    box-shadow: 0 0 4px -2px #839cd9;
+    user-select: none;
+    letter-spacing: 1px;
+    height: 2em;
+    align-items: center;
+}

@@ -3,7 +3,7 @@ import "../styles/StackPill.css"
 
 const StackPill = (props) => {
     return (
-        <div className="stack-pill">
+        <div className={`${props.style === "small" ? "stack-pill-s" : "stack-pill"}`}>
             {props.name}
         </div>
     );

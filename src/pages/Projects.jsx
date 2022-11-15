@@ -9,6 +9,8 @@ const Projects = () => {
 
     const [allProjects, setAllProjects] = useState(ProjectsData);
 
+
+
     const projectElements = () => {
         return allProjects.map(project => (
             <Project
